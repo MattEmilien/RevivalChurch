@@ -1,25 +1,34 @@
 // components/Navbar.tsx
 import Link from 'next/link';
+import Image from 'next/image';
+import { motion } from "framer-motion"
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   return (
     <nav className="bg-gray-950 p-4 h-auto">
+        
       <div className="container mx-auto flex justify-between items-center">
-        <div>
-          <Link className="text-white font-extrabold text-lg font-main" href="/">
-            REVIVAL
-          </Link>
-        </div>
-        <div className="space-x-4">
-          <Link className="text-white" href="/">
+        <div className='flex space-x-6 '>
+
+            <Link className="text-white text-xl	font-extrabold italic font-bold text-lg font-main" href="/">
+            REVIVAL MINISTRY  
+            </Link>
+
+        <div className=" space-x-[20px] font-extralight">
+          <Link className="text-white hover:text-gray-500" href="/">
             Home
           </Link>
-          <Link className="text-white" href="/about">
+          <Link className="text-white hover:text-gray-500" href="/about">
             About US
           </Link>
-          <Link className="text-white" href="/about">
-            About US
+          <Link className="text-white hover:text-gray-500" href="/about">
+            Weekly Schedule
           </Link>
+          <Link className="text-white hover:text-gray-500" href="/about">
+            Blogs
+          </Link>
+          
+        </div>
         </div>
       </div>
     </nav>

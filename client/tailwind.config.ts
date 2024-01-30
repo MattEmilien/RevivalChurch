@@ -1,3 +1,5 @@
+// tailwind.config.js
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -13,8 +15,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        'primary': ['Roboto Condensed', 'system-ui'],
+      },
+      colors: {
+        primary: '#E7BE7A',
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

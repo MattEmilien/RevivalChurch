@@ -1,7 +1,6 @@
 module.exports = {
-  theme: {
-    fontFamily: {
-      'main': ['Roboto Condensed', 'system-ui']
-    }
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
   }
 }
